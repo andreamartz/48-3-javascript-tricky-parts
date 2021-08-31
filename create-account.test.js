@@ -37,10 +37,10 @@ describe("createAccount", function() {
 
     it("adds the amount to the account balance", function() {
       expect(account.deposit("1234", 100)).toBe(
-        "Succesfully deposited $100. Current balance: $100."
+        "Successfully deposited $100. Current balance: $100."
       );
       expect(account.deposit("1234", 200)).toBe(
-        "Succesfully deposited $200. Current balance: $300."
+        "Successfully deposited $200. Current balance: $300."
       );
       expect(account.checkBalance("1234")).toBe("$300");
     });
@@ -53,10 +53,10 @@ describe("createAccount", function() {
 
     it("subtracts the amount from the account balance", function() {
       expect(bigAccount.withdraw("4321", 250)).toBe(
-        "Succesfully withdrew $250. Current balance: $9750."
+        "Successfully withdrew $250. Current balance: $9750."
       );
       expect(bigAccount.withdraw("4321", 1000)).toBe(
-        "Succesfully withdrew $1000. Current balance: $8750."
+        "Successfully withdrew $1000. Current balance: $8750."
       );
     });
 
